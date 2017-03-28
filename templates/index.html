@@ -10,12 +10,14 @@
         <div>
             Page Count: {{ page_count }}
             Book Count: {{ books_count }}
+            Average Year Completed: {{ book_year_average }}
         </div>
         {% for book in books %}
             <div>
                 <h3><p>Title: {{ book.title }}</p></h3>
                 <p>Author: {{ book.author }}</p>
                 <p>Page Count: {{ book.page_count }}</p>
+                <p>Date Published: {{ book.published }}</p>
             </div>
         {% endfor %}
     </body>
